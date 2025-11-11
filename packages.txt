@@ -1,0 +1,9 @@
+# System packages needed for Streamlit Cloud deployment
+# These will be installed via apt-get
+
+# For PST processing (readpst fallback)
+pst-utils
+
+# Build tools for libpff-python
+build-essential
+

@@ -1,0 +1,20 @@
+# Dependencies for Contact Data Cleaner - Web Version (Streamlit)
+# Python 3.8+ required
+
+# Web Framework
+streamlit>=1.28.0
+
+# Core data processing
+pandas>=1.5.0
+openpyxl>=3.0.0
+xlrd>=2.0.0
+
+# PST file processing - primary method
+libpff-python>=20231205
+
+# Alternative PST processing (optional)
+extract-msg>=0.41.0
+
+# For better Excel handling
+xlsxwriter>=3.0.0
+
