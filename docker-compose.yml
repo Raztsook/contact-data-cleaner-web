@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  contact-cleaner:
+    build: .
+    container_name: contact-data-cleaner
+    ports:
+      - "8501:8501"
+    environment:
+      - STREAMLIT_SERVER_MAX_UPLOAD_SIZE=20000
+      - STREAMLIT_SERVER_MAX_MESSAGE_SIZE=20000
+    volumes:
+      - ./uploads:/app/uploads
+    restart: unless-stopped
+    mem_limit: 8g
+    mem_reservation: 4g
+    shm_size: 2g
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+

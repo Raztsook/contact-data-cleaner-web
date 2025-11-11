@@ -6,9 +6,11 @@ textColor = "#2c3e50"
 font = "sans serif"
 
 [server]
-maxUploadSize = 500
+maxUploadSize = 20000
+maxMessageSize = 20000
 enableCORS = false
 enableXsrfProtection = true
+fileWatcherType = "none"
 
 [browser]
 gatherUsageStats = false

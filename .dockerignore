@@ -1,0 +1,16 @@
+venv/
+__pycache__/
+*.pyc
+.git/
+.gitignore
+*.md
+main.py
+excel_cleaner.py
+requirements.txt
+uploads/
+*.pst
+*.xlsx
+*.xls
+*.csv
+.DS_Store
+
